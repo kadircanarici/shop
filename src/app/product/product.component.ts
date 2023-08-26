@@ -10,6 +10,7 @@ export class ProductComponent implements OnInit {
 
   constructor() { }
   title = "Ürün Listesi"
+  filterText=""
   products: Product[]=[
     { id: 1, name: "Laptop", price: 25000, categoryID: 1, description: "HP" ,imageUrl:"https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"},
     { id: 2, name: "Mouse", price: 250, categoryID: 2, description: "Everest",imageUrl:"https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg" },
