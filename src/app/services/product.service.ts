@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Product } from '../product/product';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
+import { tap, catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,18 @@ export class ProductService {
 
   getProducts(): Observable<Product[]> {
     return this.http
-      .get<Product[]>(this.path);
+      .get<Product[]>(this.path).pipe(
+        tap(data => console.log(JSON.stringify(data))),
+        catchError(this.handleError)
+      );
+  }
+  handleError(err: HttpErrorResponse) {
+    let errorMesage = ""
+    if (err.error instanceof ErrorEvent) {
+      errorMesage = "Bir hata oluştu " + err.error.message
+    } else {
+      errorMesage = "Sistemsel bir hata "
+    }
+    return throwError(errorMesage);
   }
 }
