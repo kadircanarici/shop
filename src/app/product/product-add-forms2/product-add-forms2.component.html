@@ -1,0 +1,39 @@
+<h3>Yeni ürün ekle - Reactive</h3>
+<form [formGroup]="productAddForm" (ngSubmit)="add()">
+    <div class="form-group">
+        <input type="text" id="name" name="name" formControlName="name" class="form-control" placeholder="Ürün adı">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('name')!.hasError('required') && productAddForm.get('name')!.dirty">Ürün adı boş
+            geçilemez</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="description" name="description" formControlName="description" class="form-control"
+            placeholder="Açıklama">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('description')!.hasError('required') && productAddForm.get('description')!.dirty">
+            Açıklama boş geçilemez</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="imageUrl" name="imageUrl" formControlName="imageUrl" class="form-control"
+            placeholder="Fotograf yolu">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('imageUrl')!.hasError('required') && productAddForm.get('imageUrl')!.dirty">
+            Fotograf yolu boş
+            geçilemez</div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="price" name="price" formControlName="price" class="form-control" placeholder="Fiyat">
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('price')!.hasError('required') && productAddForm.get('price')!.dirty">
+            Fiyat boş
+            geçilemez</div>
+    </div>
+    <div class="form-group">
+        <select class="form-control" formControlName="categoryID" required id="categoryID" name="categoryID">
+            <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+        </select>
+        <div *ngIf="productAddForm.get('categoryID')!.hasError('required') && productAddForm.get('categoryID')!.touched"
+            class="aler aler-danger">Kategori gereklidir.</div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="productAddForm.invalid">Kaydet</button>
+</form>
