@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 25000,
+      "categoryID": 1,
+      "description": "HP",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 250,
+      "categoryID": 2,
+      "description": "Everest",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Smartphone",
+      "price": 1500,
+      "categoryID": 1,
+      "description": "Samsung",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Keyboard",
+      "price": 150,
+      "categoryID": 2,
+      "description": "Logitech",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "price": 2000,
+      "categoryID": 1,
+      "description": "Apple",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Monitor",
+      "price": 800,
+      "categoryID": 2,
+      "description": "Dell",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Headphones",
+      "price": 100,
+      "categoryID": 3,
+      "description": "Sony",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Printer",
+      "price": 300,
+      "categoryID": 2,
+      "description": "Epson",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Camera",
+      "price": 1200,
+      "categoryID": 3,
+      "description": "Canon",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "id": 10,
+      "name": "External Hard Drive",
+      "price": 150,
+      "categoryID": 2,
+      "description": "Seagate",
+      "imageUrl": "https://thumbs.dreamstime.com/t/young-plant-growing-sunlight-89517487.jpg"
+    },
+    {
+      "description": "Telefon",
+      "imageUrl": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1652150941.10415945!800x800!85.png",
+      "name": "Xiaomi 12",
+      "price": "25000",
+      "categoryID": "1",
+      "id": 11
+    },
+    {
+      "name": "Şarj Aleti",
+      "description": "Şarj Aleti",
+      "imageUrl": "https://images.pexels.com/photos/4526406/pexels-photo-4526406.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "price": "550",
+      "categoryID": "3",
+      "id": 12
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "name": "Aksesuar"
+    },
+    {
+      "id": 3,
+      "name": "Elektronik"
+    }
+  ]
+}
